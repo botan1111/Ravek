@@ -1,0 +1,17 @@
+@use './mixin' as *;
+@use './variable' as *;
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $font-family;
+    background-color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
