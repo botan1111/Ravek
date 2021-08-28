@@ -1,2 +1,198 @@
 @use '../foundation/mixin' as *;
 @use '../foundation/variable' as *;
+
+.l-footer {
+    background-color: $color-black;
+    padding: 27px 0;
+    color: $color-white;
+
+    @include mq(md){
+        padding: 20px 0;
+    }
+    @include mq(sm){
+        padding: 20px 0;
+    }
+
+    .l-inner {
+        max-width: 1240px;
+
+        @include mq(md) {
+            text-align: center;
+        }
+        @include mq(sm) {
+            text-align: center;
+        }
+    }
+
+    &_contents {
+        display: flex;
+        flex-direction: row-reverse;
+
+        @include mq(md) {
+            display: block;
+        }
+        @include mq(sm) {
+            display: block;
+        }
+
+        &_right {
+            margin-top: 10px;
+            margin-right: 10px;
+
+            @include mq(md) {
+                width: 100%;
+            }
+            @include mq(sm) {
+                width: 100%;
+            }
+
+            &_title {
+                font-weight: bold;
+                @include rem(20);
+                font-family: $font-family-en;
+                span {
+                    text-transform: uppercase;
+                }
+            }
+
+            &_sns {
+                display: flex;
+
+                @include mq(md) {
+                    width: 110px;
+                    margin: 4px auto 0;
+                }
+                @include mq(sm) {
+                    width: 110px;
+                    margin: 4px auto 0;
+                }
+
+                &_link {
+                    display: inline-block;
+                    width: 42px;
+                    padding-right: 18px;
+
+                    @include mq(xl) {
+                        cursor: pointer;
+                        transition: opacity 0.3s ease 0s;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                    @include mq(lg) {
+                        cursor: pointer;
+                        transition: opacity 0.3s ease 0s;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_left {
+            width: 60%;
+            margin-right: auto;
+            @include rem(14);
+            letter-spacing: 0.03em;
+
+            @include mq(md) {
+                width: 100%;
+            }
+            @include mq(sm) {
+                width: 100%;
+            }
+
+            &_logo {
+                width: 70px;
+
+                @include mq(xl) {
+                    cursor: pointer;
+                    transition: opacity 0.3s ease 0s;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+                @include mq(lg) {
+                    cursor: pointer;
+                    transition: opacity 0.3s ease 0s;
+                    &:hover {
+                        opacity: 0.6;
+                    }
+                }
+
+                @include mq(md) {
+                    margin: 30px auto 0;
+                }
+                @include mq(sm) {
+                    margin: 30px auto 0;
+                }
+            }
+
+            &_list {
+                display: flex;
+
+                @include mq(md) {
+                    display: block;
+                }
+                @include mq(sm) {
+                    display: block;
+                }
+
+                &_link {
+                    display: inline-block;
+                    padding-right: 14px;
+                    margin-top: 20px;
+                    font-weight: bold;
+
+                    @include mq(xl) {
+                        cursor: pointer;
+                        transition: opacity 0.3s ease 0s;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+
+                    @include mq(lg) {
+                        cursor: pointer;
+                        transition: opacity 0.3s ease 0s;
+                        &:hover {
+                            opacity: 0.6;
+                        }
+                    }
+
+                    @include mq(md) {
+                        padding-right: 0;
+                        margin-top: 6px;
+                    }
+                    @include mq(sm) {
+                        padding-right: 0;
+                        margin-top: 6px;
+                    }
+                }
+            }
+        }
+    }
+    &_copyright {
+        letter-spacing: 0.03em;
+
+        @include mq(md){
+            margin-top: 14px;
+        }
+        @include mq(sm){
+            margin-top: 14px;
+        }
+
+        span {
+            display: inline-block;
+            margin-left: 14px;
+
+            @include mq(md){
+                display: block;
+            }
+            @include mq(sm){
+                display: block;
+            }
+        }
+    }
+}

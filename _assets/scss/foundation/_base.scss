@@ -7,7 +7,8 @@ html {
 
 body {
     font-family: $font-family;
-    background-color: #fff;
+    background-color: $color-white;
+    line-height: 1.8;
 }
 
 img {
@@ -15,3 +16,26 @@ img {
     height: auto;
     vertical-align: bottom;
 }
+
+//PCのみ表示
+
+.is-pc{
+    @include mq(md) {
+        display: none;
+    }
+    @include mq(sm) {
+        display: none;
+    }
+}
+
+//スマホのみ表示
+
+.is-sp{
+    @include mq(lg){
+        display: none;
+    }
+    @include mq(xl){
+        display: none;
+    }
+}
+

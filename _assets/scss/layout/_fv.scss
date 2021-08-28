@@ -1,0 +1,132 @@
+@use '../foundation/mixin' as *;
+@use '../foundation/variable' as *;
+
+.l-fv {
+    background-color: $color-lightpurple;
+    padding-top: 33px;
+    padding-bottom: 36px;
+
+    &_inner {
+        display: flex;
+        max-width: 1228px;
+        
+
+        @include mq(md) {
+            display: block;
+            padding-top: 27px;
+            padding-bottom: 22px;
+        }
+
+        @include mq(sm) {
+            display: block;
+            padding-top: 27px;
+            padding-bottom: 22px;
+        }
+    }
+
+    &_left {
+        width: 55%;
+        margin-right: 1%;
+        padding-top: 84px;
+
+        @include mq(md) {
+            width: 100%;
+            margin-right: 0;
+            padding-top: 0;
+        }
+        @include mq(sm) {
+            width: 100%;
+            margin-right: 0;
+            padding-top: 0;
+        }
+
+        &_title {
+            font-weight: bold;
+            line-height: 1.448;
+            font-size: calc(100vw / (1500 / 60));
+
+            @include mq(xl) {
+                @include rem(60);
+            }
+
+            @include mq(md) {
+                font-size: calc(100vw / (375 / 30));
+                line-height: 1.6;
+            }
+
+            @include mq(sm) {
+                @include rem(30);
+                line-height: 1.6;
+            }
+        }
+
+        &_text {
+            width: 86%;
+            margin-top: 34px;
+
+            @include mq(md) {
+                width: 100%;
+                line-height: 1.65;
+                margin-top: 19px;
+            }
+
+            @include mq(sm) {
+                width: 100%;
+                line-height: 1.65;
+                margin-top: 19px;
+            }
+        }
+    }
+
+    &_right {
+        width: 43%;
+
+        @include mq(md) {
+            margin-top: -39px;
+            width: 96%;
+        }
+
+        @include mq(sm) {
+            margin-top: -39px;
+            width: 96%;
+        }
+    }
+
+    &_btn {
+        margin-top: 30px;
+        font-size: calc(100vw / (1440 / 18));
+
+        @include mq(xl) {
+            @include rem(18);
+        }
+        .c-btn--purple {
+            padding: 10px 26px;
+            border-radius: 100vh;
+            font-weight: bold;
+            margin-right: 36px;
+        }
+
+        .c-btn--white {
+            padding: 10px 26px;
+            border-radius: 100vh;
+            font-weight: bold;
+        }
+
+        &--sp {
+            max-width: 300px;
+            margin: -14px auto 0;
+
+            a {
+                text-align: center;
+                display: block;
+                padding: 12px 42px;
+                border-radius: 100vh;
+                @include rem(18);
+
+                &:not(:first-of-type) {
+                    margin-top: 32px;
+                }
+            }
+        }
+    }
+}

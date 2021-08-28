@@ -1,0 +1,115 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.c-btn--purple {
+    display: inline-block;
+    background-color: $color-main;
+    color: $color-white;
+    font-weight: bold;
+
+    @include mq(lg) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            transform: translate(0, -3px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+        }
+    }
+    @include mq(xl) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            transform: translate(0, -3px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+        }
+    }
+}
+
+.c-btn--white {
+    display: inline-block;
+    background-color: $color-white;
+    color: $color-main;
+    font-weight: bold;
+    border: solid 2px $color-main;
+
+    @include mq(lg) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            transform: translate(0, -3px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+        }
+    }
+    @include mq(xl) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            transform: translate(0, -3px);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.24);
+        }
+    }
+}
+
+.c-btn--priceBlack {
+    display: inline-block;
+    background-color: $color-white;
+    color: $color-font;
+    font-weight: bold;
+    border: solid 2px $color-font;
+
+    @include mq(lg) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            border: 2px solid $color-white;
+            background-color: $color-font;
+            color: $color-white;
+        }
+    }
+    @include mq(xl) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            border: 2px solid $color-white;
+            background-color: $color-font;
+            color: $color-white;
+        }
+    }
+}
+
+.c-btn--pricePurple {
+    display: inline-block;
+    background-color: $color-main;
+    color: $color-white;
+    font-weight: bold;
+    border: solid 2px $color-white;
+
+    @include mq(lg) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            border: 2px solid $color-main;
+            background-color: $color-white;
+            color: $color-main;
+        }
+    }
+    @include mq(xl) {
+        cursor: pointer;
+        transition: all 0.3s ease 0s;
+
+        &:hover {
+            border: 2px solid $color-main;
+            background-color: $color-white;
+            color: $color-main;
+        }
+    }
+}
+
+

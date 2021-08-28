@@ -1,0 +1,62 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+
+.c-title{
+    color: $color-main;
+    font-size: calc(100vw / ( 1440 / 48 ));
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .05em;
+    line-height: 1;
+    span{
+        font-size: calc(100vw / ( 1440 / 60 ));
+        font-weight: bold;
+    }
+
+    @include mq(xl){
+        @include rem(48);
+        span{
+            font-size: 60px;
+        }
+    }
+
+    @include mq(md){
+        @include rem(30);
+        line-height: 1.4;
+        span{
+            font-size: calc(100vw / ( 1440 / 60 ));
+        }
+        
+    }
+    @include mq(sm){
+        @include rem(30);
+        line-height: 1.4;
+        span{
+            font-size: 37px;
+        }
+    }
+
+    &--sub{
+        font-family: $font-family-en;
+        color: #9F9EC1;
+        font-size: calc(100vw / ( 1440 / 36 ));
+        text-align: center;
+        letter-spacing: .05em;
+
+        @include mq(xl){
+            @include rem(36);
+        }
+
+        @include mq(md){
+            @include rem(22);
+        }
+
+        @include mq(sm){
+            @include rem(22);
+        }
+        span{
+            text-transform: uppercase;
+        }
+    }
+}

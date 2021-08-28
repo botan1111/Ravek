@@ -1,0 +1,46 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+.p-block{
+    background-color: $color-font;
+    color: $color-white;
+    text-align: center;
+    padding: 62px 0;
+
+    @include mq(md){
+        padding: 44px 0;
+    }
+    @include mq(sm){
+        padding: 44px 0;
+    }
+
+    &_text{
+        @include rem(36);
+        font-weight: bold;
+        letter-spacing: .02em;
+        line-height: 1.4;
+
+        @include mq(md){
+            @include rem(18);
+        }
+        @include mq(sm){
+            @include rem(18);
+        }
+    }
+
+    .c-btn--purple{
+        margin-top: 32px;
+        padding: 14px 53px;
+        @include rem(24);
+        border-radius: 100vh;
+
+        @include mq(md){
+            padding: 10px 42px;
+            @include rem(18);
+        }
+        @include mq(sm){
+            padding: 10px 42px;
+            @include rem(18);
+        }
+    }
+}

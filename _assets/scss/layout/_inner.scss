@@ -1,2 +1,18 @@
 @use '../foundation/mixin' as *;
 @use '../foundation/variable' as *;
+
+.l-inner{
+    width: 100%;
+    margin: auto;
+    padding: 0 20px;
+
+    @include mq(md){
+        width: 89%;
+        padding: 0;
+    }
+
+    @include mq(sm){
+        width: 89%;
+        padding: 0;
+    }
+}

@@ -1,0 +1,29 @@
+@use '../../foundation/mixin' as *;
+@use '../../foundation/variable' as *;
+
+
+.c-textAria{
+    @include rem(16);
+
+    @include mq(md){
+        @include rem(14);
+        line-height: 1.6;
+    }
+    @include mq(sm){
+        @include rem(14);
+        line-height: 1.6;
+    }
+
+    &--big{
+        @include rem(18);
+
+        @include mq(md){
+            @include rem(16);
+            line-height: 1.6;
+        }
+        @include mq(sm){
+            @include rem(16);
+            line-height: 1.6;
+        }
+    }
+}
